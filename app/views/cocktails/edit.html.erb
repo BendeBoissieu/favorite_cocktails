@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-show">
 
   <div class="col-xs-12">
     <h1><%= @cocktail.name %></h1>
@@ -30,7 +30,7 @@
 
   </div>
 </div>
-<div class="container">
+<div class="container-show">
   <div class="col-sm-12 col-md-6">
   <%= simple_form_for [@cocktail, @dose] do |f| %>
   <dt><p>Select an ingredient in the list:</p></dt>
@@ -38,13 +38,13 @@
   <dt><p></p></dt>
   <dt><p>Give the proportion of the ingredient </p></dt>
   <dt><%= f.input :description %></dt>
-  <%= f.button :submit  %>
+  <%= f.button :submit, class: "btn btn-primary" %>
   <% end %>
   </div>
 </div>
-<div class="container">
-  <h4><%= link_to ' Back to ' + @cocktail.name, cocktail_path, class: 'glyphicon glyphicon-hand-right'%></h4>
-  <h4><%= link_to " Back to all cocktails ", root_path, class: 'glyphicon glyphicon-hand-right'%></h4>
+<div class="container-links">
+  <h4><%= link_to " Add or delete an ingredient? ", cocktail_path, class: 'glyphicon glyphicon-hand-right'%></h4>
+  <h4><%= link_to " See all the cocktails ", root_path, class: 'glyphicon glyphicon-hand-right'%></h4>
 
 
 </div>
