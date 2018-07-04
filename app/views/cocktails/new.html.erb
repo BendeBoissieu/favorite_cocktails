@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container-new">
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-sm-12 col-md-6">
       <h1>Create a new cocktail</h1>
-
+        <hr>
       <%= simple_form_for [@cocktail] do |f| %>
-      <%= f.input :name %>
+      <h3><%= f.input :name %></h3>
 
 
         <%= f.button :submit, class: 'btn btn-primary' %>

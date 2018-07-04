@@ -13,16 +13,59 @@ body{
 
 }
 
-.container{
+.container-new{
   background-color: white;
 
    text-align: center;
    vertical-align: middle;
-   width: 40%;
+   width: 30%;
    box-shadow: 2px 2px 3px gray;
-   margin: 50px;
+margin: auto;
+display: flex;
+opacity: 0.8;
+margin-top: 50px;
+padding: 20px;
 }
 
+
+.container-show{
+  background-color: white;
+
+   text-align: left;
+   vertical-align: middle;
+   width: 40%;
+   box-shadow: 2px 2px 3px gray;
+
+   margin: auto;
+   margin-top: 50px;
+   display: flex;
+   opacity: 0.8;
+}
+
+
+
+.container-show h1{
+  text-align: center;
+
+}
+
+.container-links{
+  opacity: 0.8;
+  background-color: white;
+
+   text-align: left;
+   vertical-align: middle;
+   width: 40%;
+   box-shadow: 2px 2px 3px gray;
+
+   margin: auto;
+   margin-top: 50px;
+  height: 90px;
+    display: block;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .col-md-6{
   width: 100%;
 }
